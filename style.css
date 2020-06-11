@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.little-text {
+    font-size: 14px;
+    color: #242424;
+}
+
+.logo-size {
+    width: 150px;
+}
+
+header {
+    height: 96px;
+    background-color: #e3e3e3;
+}
+
+header .frame {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frame {
+    width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.form-section {
+    background-color: white;
+    height: 550px;
+}
+
+.form-section .form-background {
+    background-image: url(imagens/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-box {
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: white;
+    margin-top: -15px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 5px 1px rgba(140,140,140,1);
+}
+
+.form-box .form-header {
+    background-color: #dbdbdb;
+    height: 90px;
+    padding: 20px;
+}
+
+.form-box .form-header p {
+    font-size: 18px;
+    width: 360px;
+}
+
+.form-box form {
+    padding: 0 18px;
+}
+
+
+
+.form-box input {
+    height: 50px;
+    padding-left: 6px;
+}
+
+.form-box button {
+    color: white;
+    height: 50px;
+    background-color: #00406e;
+    border: 0;
+    font-size: 24px;
+}
+
+form div {
+    margin-top: 32px;
+}
+
+.arrow-section .frame {
+    color: white;
+    text-align: center;
+    background-color: #29526d;
+    height: 200px;
+}
+
+.arrow-section .frame img {
+    transform: translateY(-50%);
+}
+
+article.flex-mosaic {
+    display: flex;
+}
+
+article.flex-mosaic .background{
+    height: 100%;
+    width: 4000px;
+    background-color: red;
+}
+
+
+
+@media screen and (max-width: 1028px) {
+    .frame {
+        width: 100%;
+    }
+
+    .form-section {
+        height: auto;
+    }
+
+    .form-section .form-background {
+        justify-content: center;
+        padding: 70px 0;
+    }
+
+    form div:last-child {
+        margin-bottom: 36px;
+    }
+
+    .form-section .form-box {
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
